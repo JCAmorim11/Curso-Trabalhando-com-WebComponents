@@ -1,4 +1,4 @@
-# Curso-Trabalhando-com-WebComponents
+# Curso: Trabalhando com Web Components no Front-end
 Repositorio do Curso da DIO Trabalhando com webcomponents no front-end
 
 
