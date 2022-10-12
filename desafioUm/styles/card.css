@@ -41,7 +41,9 @@ body{
 .card_left > span {
         font-weight:400;
 }
-
+.teste{
+        margin-top: 30%;
+}
 img{
         width:30%;
 }
