@@ -7,3 +7,11 @@ class CardNews extends HTMLElement {
 }
 
 customElements.define("card-news", CardNews);
+
+
+
+
+
+
+
+
