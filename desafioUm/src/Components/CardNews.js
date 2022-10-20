@@ -4,7 +4,7 @@ class Cardnews extends HTMLElement {
 
 		const shadow = this.attachShadow({mode:"open"});
 		shadow.appendChild(this.build());
-	//	shadow.appendChild(this.styles());
+		shadow.appendChild(this.styles());
 	}
 
 	build(){ 
@@ -41,6 +41,50 @@ class Cardnews extends HTMLElement {
 
 
 	styles(){ 
+		const style = document.createElement("style");
+		style.textContent = `
+			.card {
+			  width: 80%;
+			  height: 200px;
+			  box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+			  -webkit-box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+			  -moz-box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+			  display: flex;
+			  flex-direction: row;
+			  justify-content: space-between;
+			}
+			
+			.card__left {
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  padding-left: 10px;
+			}
+			
+			.card__left > span {
+			  font-weight: 400;
+			}
+			
+			.card__left > a {
+			  margin-top: 15px;
+			  font-size: 25px;
+			  color: black;
+			  text-decoration: none;
+			  font-weight: bold;
+			}
+			
+			.card__left > p {
+			  color: rgb(70, 70, 70);
+			}
+
+			.card__right > img {
+				width: 100px;
+			}
+		`;
+	
+		return style;
+	
+		return styles;
 	}
 }
 
